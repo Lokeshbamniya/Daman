@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div><h2>💸MR lokesh💸</h2></div>
+    <div class="container">
+        <h1>Trading Game</h1>
+        <p>85% right🎉</p>
+        <input type="text" id="sequenceInput" oninput="validateInput()" placeholder="0 या 1 दर्ज करें">
+        
+        <!-- बटन जोड़े गए हैं 0 और 1 के लिए -->
+        <div class="button-container">
+            <button onclick="addToSequence('0')">small</button>
+            <button onclick="addToSequence('1')">big</button>
+            
+            
+        </div>
+
+        <button id="checkButton" style= color: white;" onclick="checkPrediction()">predic</button>
+        <div id="predictionDisplay">Prediction: <span id="prediction"></span></div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
